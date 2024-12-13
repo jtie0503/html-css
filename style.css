@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+.nav-logo{
+    font-size: 35px;
+    font-weight: bolder;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.nav-links{
+    display: flex;
+    gap: 20px;
+
+}
+.nav-links li{
+    position: relative;
+    margin: 0 15px;
+    list-style: none;
+}
+.nav-links a {
+    padding: 10px 20px;
+    font-size: 24px;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.nav-links a:hover{
+    color: orange;
+
+}
+.menu-toggle{
+    display: none;
+}
+.hamburger{
+    cursor: pointer;
+    flex-direction: column;
+    display: none;
+}
+
+.hamburger span{
+    width: 25px;
+    height: 4px;
+    margin: 4px;
+    background-color: white;
+}
+
+
+body{
+    font-family: sans-serif;
+  
+    
+}
+.hero-section {
+    height: 100vh;
+    background-image: url(sunflower.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .hero-section .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    color: #fff;
+  }
+  
+  .hero-section .content h2 {
+    font-size: 3rem;
+    max-width: 600px;
+    line-height: 70px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    color: violet;
+  }
+  
+  .hero-section .content p {
+    font-weight: 300;
+    max-width: 600px;
+    margin-top: 15px;
+  }
+  
+  .hero-section .content button {
+    background: #fff;
+    padding: 12px 30px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 6px;
+    margin-top: 38px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+  }
+  
+  .hero-section .content button:hover {
+    color: #fff;
+    background: #C06B3E;
+  }
+
+
+
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1024px){
+    .nav-links{
+        position: absolute;
+        top: 60px;
+        right: 0;
+        flex-direction: column;
+        z-index: 1;
+        display: none;
+        width: 100%;
+        background-color: #333;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 15px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        font-size: 0.9rem;
+      }
+    
+
+
+.nav-links.active{
+    display: flex;
+}
+.hamburger{
+    display: flex;
+}
+.menu-toggle:checked + .hamburger + .nav-links{
+    display: flex;
+}
+}
+
